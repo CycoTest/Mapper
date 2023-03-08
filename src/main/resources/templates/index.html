@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <title>MAPER</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/css/styles.css" rel="stylesheet"/>
-    <link href="/css/customStyle.css" rel="stylesheet"/>
+<!--    &lt;!&ndash; Favicon&ndash;&gt;-->
+<!--    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>-->
+<!--    &lt;!&ndash; Core theme CSS (includes Bootstrap)&ndash;&gt;-->
+<!--    <link href="/css/styles.css" rel="stylesheet"/>-->
+<!--    <link href="/css/customStyle.css" rel="stylesheet"/>-->
+    <!-- 공통 링크 구성 -->
+    <th:block th:replace="fragments/common"></th:block>
 </head>
 <body>
 <!-- Responsive navbar-->
@@ -25,7 +27,7 @@
                 <li class="nav-item"><a class="nav-link" href="/thymeleaf/boardwrite">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/thymeleaf/signup">Sign Up</a></li>
             </ul>
         </div>
     </div>

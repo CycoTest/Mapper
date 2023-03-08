@@ -17,4 +17,9 @@ public class ThymeleafExController {
     public String boardWrite() {
         return "board/write";
     }
+
+    @GetMapping(value = "/signup")
+    public String signup() {
+        return "board/signup";
+    }
 }
